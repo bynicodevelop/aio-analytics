@@ -1,5 +1,5 @@
 {
-  "name": "aio-analytics",
+  "name": "aio-vue-analytics",
   "version": "1.0.0",
   "description": "Allows the installation of Google Analytics and Facebook pixel",
   "main": "index.js",
