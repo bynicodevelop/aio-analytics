@@ -1,0 +1,20 @@
+{
+  "name": "aio-analytics",
+  "version": "1.0.0",
+  "description": "Allows the installation of Google Analytics and Facebook pixel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bynicodevelop/aio-analytics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bynicodevelop/aio-analytics/issues"
+  },
+  "homepage": "https://github.com/bynicodevelop/aio-analytics#readme"
+}
