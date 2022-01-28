@@ -78,7 +78,7 @@ function lead(eventProperties = null) {
   track("Lead", eventProperties);
 }
 
-export default {
+module.exports = {
   tracker: {
     pageView,
     lead,
