@@ -2,7 +2,7 @@
   "name": "aio-vue-analytics",
   "version": "1.0.0",
   "description": "Allows the installation of Google Analytics and Facebook pixel",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

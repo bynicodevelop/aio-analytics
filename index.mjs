@@ -78,7 +78,7 @@ function lead(eventProperties = null) {
   track("Lead", eventProperties);
 }
 
-module.exports = {
+const analytics = {
   tracker: {
     pageView,
     lead,
@@ -108,3 +108,5 @@ module.exports = {
     });
   },
 };
+
+export default analytics;
