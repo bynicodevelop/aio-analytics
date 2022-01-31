@@ -51,30 +51,24 @@ const init = (pixelId, ga4Id) => {
 };
 
 function track(eventName, eventProperties) {
+  console.log(eventName, eventProperties);
+
   if (!window.fbq) {
     return;
   }
 
-  console.log(eventName, eventProperties);
-
   if (process.env.NODE_ENV !== "production") return;
+
+  console.log("production");
 
   window.fbq("track", eventName, eventProperties);
 }
 
 function pageView(eventProperties = null) {
-  if (!window.fbq) {
-    return;
-  }
-
   track("PageView", eventProperties);
 }
 
 function lead(eventProperties = null) {
-  if (!window.fbq) {
-    return;
-  }
-
   track("Lead", eventProperties);
 }
 
