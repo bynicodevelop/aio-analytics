@@ -1,5 +1,9 @@
 const init = (pixelId, ga4Id) => {
-  if (process.env.NODE_ENV !== "production") return;
+  if (process.env.NODE_ENV !== "production") {
+    console.log("Overriding tracking IDs");
+    pixelId == null;
+    ga4Id == null;
+  }
 
   !(function (f, b, e, v, n, t, s) {
     if (f.fbq) return;
@@ -52,14 +56,6 @@ const init = (pixelId, ga4Id) => {
 
 function track(eventName, eventProperties) {
   console.log(eventName, eventProperties);
-
-  if (!window.fbq) {
-    return;
-  }
-
-  if (process.env.NODE_ENV !== "production") return;
-
-  console.log("production");
 
   window.fbq("track", eventName, eventProperties);
 }
