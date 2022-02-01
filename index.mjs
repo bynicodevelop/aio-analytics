@@ -54,18 +54,17 @@ const init = (pixelId, ga4Id) => {
   window.gtag("config", ga4Id);
 };
 
-function track(eventName, eventProperties) {
-  console.log(eventName, eventProperties);
-
-  window.fbq("track", eventName, eventProperties);
-}
-
 function pageView(eventProperties = null) {
-  track("PageView", eventProperties);
+  console.log("PageView", eventProperties);
+
+  window.fbq("track", "PageView", eventProperties);
 }
 
 function lead(eventProperties = null) {
-  track("Lead", eventProperties);
+  console.log("Prospect", eventProperties);
+
+  window.fbq("track", "Lead", eventProperties);
+  window.gtag("event", "generate_lead", eventProperties);
 }
 
 const analytics = {
